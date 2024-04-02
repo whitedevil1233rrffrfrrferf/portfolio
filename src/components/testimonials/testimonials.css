@@ -1,0 +1,32 @@
+#Testimonials{
+    height:50vh;
+
+}
+.testimonials_container{
+    
+}
+section> h2{
+    margin-bottom: 5rem;
+}
+.testimonial{
+    text-align: center;
+    background:var(--color-bg-variant);
+    padding: 2rem;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.point{
+    color: var(--color-light);
+}
+@media screen and (max-width:600px) {
+    .testimonial{
+        width: 85%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .testimonial{
+        width:65%;
+    }
+}
+

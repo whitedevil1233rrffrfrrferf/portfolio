@@ -1,0 +1,124 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap:15%;
+}
+
+.about_me{
+    width: 100%;
+    background: var(--color-light);
+    display: grid;
+    place-items: center;
+}
+.about_me img{
+    height:420px;
+    overflow: hidden;
+    display: block;
+    border-radius:70px;
+    transform: rotate(10deg);
+}
+.about_me img:hover{
+    transition:var(--transition);
+    transform: rotate(0deg);
+}
+.about_cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 2rem;
+}
+.about_card{
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    padding: 2rem;
+    text-align: center;
+}
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    transform: scale(1.1);
+    transition: var(--transition);
+    cursor: default;
+}
+.about_icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.about_card h5{
+    font-size: 0.9rem;
+}
+.about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+#about{
+    height:130vh !important;
+    margin-top: 8rem;
+}
+
+@media screen and (max-width:1024px){
+    section{
+        height: 90vh;
+    }
+    .about_cards{
+        grid-template-columns: 1fr;
+    }
+    .about_me img{
+        border-radius: 50%;
+        height: 20%;
+        transform: rotate(0deg);
+        position: relative;
+        margin-top:1.2rem;
+        left:99%;
+    }
+    .about_me{
+        background: none;
+        display: block;
+        text-align: center;
+    }   
+    .about_cards{
+        position: relative;
+        margin-top:22rem;
+        right:45%;
+    }
+    .about_card{
+        width: 95%;
+    }
+    #about{
+        height:230vh !important;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .about_me{
+        
+        margin: 0 auto 3rem;
+    }
+    .about_cards{
+        display: grid;
+        grid-template-columns:1fr,1fr,1fr,1fr;
+        margin-top: 24rem;
+        
+    }
+    .about_me img{
+        
+        aspect-ratio: 1/1;
+        
+        transform: rotate(0deg);
+    }
+    .about_content{
+        text-align: center;
+    }
+    .about_cards{
+        
+        margin-top:23rem;
+        
+    }
+    .about_card{
+        width: 100%;
+    }
+    #about{
+        height:230vh !important;
+    }
+    
+}
